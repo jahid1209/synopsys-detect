@@ -18,9 +18,9 @@ public class IntegerValueParserTests {
 
     @Test
     public void parseInt() throws ValueParseException {
-        Assertions.assertEquals(new Integer(-1), parser.parse("-1"));
-        Assertions.assertEquals(new Integer(1), parser.parse("1"));
-        Assertions.assertEquals(new Integer(Integer.MAX_VALUE), parser.parse("2147483647"));
-        Assertions.assertEquals(new Integer(Integer.MIN_VALUE), parser.parse("-2147483648"));
+        Assertions.assertEquals( -1, parser.parse("-1"));
+        Assertions.assertEquals(1, parser.parse("1"));
+        Assertions.assertEquals(Integer.MAX_VALUE, parser.parse("2147483647"));
+        Assertions.assertEquals(Integer.MIN_VALUE, parser.parse("-2147483648"));
     }
 }

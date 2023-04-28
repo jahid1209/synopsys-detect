@@ -32,7 +32,7 @@ public class IntegerPropertiesTests {
     public void testValued() throws InvalidPropertyException {
         ValuedAlikeProperty<Integer> property = new IntegerProperty("integer.valued", 2);
         PropertyConfiguration config = configOf(Pair.of("integer.valued", "5"));
-        Assertions.assertEquals(new Integer(5), config.getValue(property));
+        Assertions.assertEquals(5, config.getValue(property));
 
         PropertyTestHelpUtil.assertAllHelpValid(property);
     }

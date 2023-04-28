@@ -37,7 +37,7 @@ class BdoTest {
         Optional<Integer> nonEmptyOptional = Optional.of(2);
         Bdo<Integer> bdo = Bdo.of(emptyOptional).or(nonEmptyOptional).or(1);
 
-        Assertions.assertEquals(new Integer(2), bdo.get());
+        Assertions.assertEquals(2, bdo.get());
     }
 
     @Test

@@ -45,7 +45,7 @@ public class ExclusionPatternCreatorTest {
         FileUtils.deleteDirectory(root);
     }
 
-    static Stream<Arguments> inputPatternsToExclusionsProvider() {
+     static Stream<Arguments> inputPatternsToExclusionsProvider() {
         // Stream of single input patterns and the list of patterns that they should resolve to
         // NOTE: recognition of path patterns is dependent on filter's implementation of path matching (glob vs regex)
         return Stream.of(

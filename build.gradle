@@ -63,8 +63,10 @@ allprojects {
         implementation 'org.freemarker:freemarker:2.3.31'
         implementation 'org.apache.httpcomponents:httpclient-osgi:4.5.13'
 
-        testImplementation 'org.junit.jupiter:junit-jupiter-params:5.4.2'
-        testImplementation 'org.mockito:mockito-core:2.+'
+        implementation 'net.bytebuddy:byte-buddy:1.12.23'
+
+        testImplementation 'org.junit.jupiter:junit-jupiter-params:5.7.1'
+        testImplementation 'org.mockito:mockito-core:5.1.1'
     }
 }
 
@@ -108,9 +110,9 @@ dependencies {
     implementation 'org.apache.pdfbox:pdfbox:2.0.25'
 
     // spring-boot-starter-test *can* provide these, but we choose to be more explicit about the dependencies we ACTUALLY use
-    testImplementation 'org.assertj:assertj-core:3.13.2'
-    testImplementation 'org.skyscreamer:jsonassert:1.5.0'
-    testImplementation 'org.mockito:mockito-inline:2.+'
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+    testImplementation 'org.skyscreamer:jsonassert:1.5.1'
+    testImplementation 'org.mockito:mockito-inline:5.1.1'
 
     testImplementation project(':configuration').sourceSets.test.output
     testImplementation project(':common-test')

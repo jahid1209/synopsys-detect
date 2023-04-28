@@ -32,7 +32,7 @@ public class LongPropertiesTests {
     public void testValued() throws InvalidPropertyException {
         ValuedAlikeProperty<Long> property = new LongProperty("long.valued", 2L);
         PropertyConfiguration config = configOf(Pair.of("long.valued", "5"));
-        Assertions.assertEquals(new Long(5L), config.getValue(property));
+        Assertions.assertEquals(5L, config.getValue(property));
 
         PropertyTestHelpUtil.assertAllHelpValid(property);
     }

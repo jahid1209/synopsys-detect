@@ -18,9 +18,9 @@ public class LongValueParserTests {
 
     @Test
     public void parseLong() throws ValueParseException {
-        Assertions.assertEquals(new Long(-1), parser.parse("-1"));
-        Assertions.assertEquals(new Long(1), parser.parse("1"));
-        Assertions.assertEquals(new Long(Long.MAX_VALUE), parser.parse("9223372036854775807"));
-        Assertions.assertEquals(new Long(Long.MIN_VALUE), parser.parse("-9223372036854775808"));
+        Assertions.assertEquals(-1, parser.parse("-1"));
+        Assertions.assertEquals(1, parser.parse("1"));
+        Assertions.assertEquals(Long.MAX_VALUE, parser.parse("9223372036854775807"));
+        Assertions.assertEquals(Long.MIN_VALUE, parser.parse("-9223372036854775808"));
     }
 }
